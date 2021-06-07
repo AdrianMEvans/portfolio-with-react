@@ -7,8 +7,9 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import '@fontsource/roboto'
 import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
 
-import { orange, green, teal, amber, pink, purple  } from '@material-ui/core/colors';
+import { orange, green, teal, amber, pink, purple } from '@material-ui/core/colors';
 
 // const useStyles = makeStyles({
 //   root: {
@@ -16,7 +17,7 @@ import { orange, green, teal, amber, pink, purple  } from '@material-ui/core/col
 //   }
 // })
 
-const theme = createMuiTheme ({
+const theme = createMuiTheme({
   typography: {
     h2: {
       fontSize: 36,
@@ -35,39 +36,41 @@ const theme = createMuiTheme ({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <header className="App-header">
-          <Typography variant="h2" component='div'>
-            Welcome to MUI
+      <Container maxWidth="lg">
+        <div className="App">
+          <header className="App-header">
+            <Typography variant="h2" component='div'>
+              Welcome to MUI
         </Typography>
-          <Typography variant="subtitle1">
-            Learning how to use Material UI.
+            <Typography variant="subtitle1">
+              Learning how to use Material UI.
         </Typography>
-          <ButtonGroup variant="contained">
-            <Button
-              startIcon={<SaveIcon />}
-              href="#"
-              style={{
-                fontSize: 20
-              }}
-              variant="contained"
-              color="primary">
-              Save
+            <ButtonGroup variant="contained">
+              <Button
+                startIcon={<SaveIcon />}
+                href="#"
+                style={{
+                  fontSize: 20
+                }}
+                variant="contained"
+                color="primary">
+                Save
         </Button>
-            <Button
-              startIcon={<DeleteIcon />}
-              href="#"
-              style={{
-                fontSize: 20
-              }}
-              variant="contained"
-              color="secondary">
-              Delete
+              <Button
+                startIcon={<DeleteIcon />}
+                href="#"
+                style={{
+                  fontSize: 20
+                }}
+                variant="contained"
+                color="secondary">
+                Delete
         </Button>
-          </ButtonGroup>
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-      </div>
+            </ButtonGroup>
+            <img src={logo} className="App-logo" alt="logo" />
+          </header>
+        </div>
+      </Container>
     </ThemeProvider>
   );
 }
