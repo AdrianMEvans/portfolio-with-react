@@ -17,6 +17,11 @@ import { orange, green, teal, amber, pink, purple  } from '@material-ui/core/col
 // })
 
 const theme = createMuiTheme ({
+  typography: {
+    h2: {
+      fontSize: 36,
+    }
+  },
   palette: {
     primary: {
       main: purple[400],
@@ -32,7 +37,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <header className="App-header">
-          <Typography variant="h2">
+          <Typography variant="h2" component='div'>
             Welcome to MUI
         </Typography>
           <Typography variant="subtitle1">
