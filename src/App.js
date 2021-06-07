@@ -6,7 +6,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button href="#" variant="contained" color="secondary">
+        <Button 
+        href="#"
+        style={{
+          fontSize: 16
+        }} 
+        variant="contained" 
+        color="secondary">
           Hello World
         </Button>
         <img src={logo} className="App-logo" alt="logo" />
