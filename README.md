@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Screenrecording of SPA working below.\
 \
-  ![Recording](https://github.com/AdrianMEvans/employee-directory/blob/master/public/Screen%20Recording.gif?raw=true)
+  ![Recording](https://github.com/AdrianMEvans/portfolio-with-react/blob/master/public/images/Screen%20Recording%202021-06-08%20at%2010.29.30%20pm.gif?raw=true)
