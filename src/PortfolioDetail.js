@@ -6,29 +6,6 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 import '@fontsource/roboto';
-import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
-
-import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  }));
-  
-  const theme = createMuiTheme({
-    typography: {
-      h2: {
-        fontSize: 36,
-      }
-    }
-  })
 
 const PortfolioDetail = () => {
     const { id } = useParams();
