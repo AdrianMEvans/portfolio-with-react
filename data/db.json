@@ -1,25 +1,63 @@
 {
     "portfolios": [
         { 
-            "title": "My new website",
-            "body": "lorem ipsum...", 
-            "author": "mario", 
-            "deploy": true, 
+            "title": "Hookt - Loyalty App",
+            "body": "Hookt is a mobile application for Android or iOS that offers an alternative to Stamp / Clip based loyalty programs.", 
+            "author": "Adrian Evans", 
+            "image": "public/images/Hookt.png", 
+            "gitHub": "https://github.com/AdrianMEvans/hookt",
+            "deploy": false,
             "id": 1 
         },
         { 
-            "title": "Welcome party!", 
-            "body": "lorem ipsum...", 
-            "author": "yoshi", 
-            "deploy": false, 
+            "title": "Burger Logger",
+            "body": "Burger Logger allows the user to capture burgers they want to consume and then log consumed burgers.", 
+            "author": "Adrian Evans", 
+            "image": "public/images/BurgerLogger.png", 
+            "gitHub": "https://github.com/AdrianMEvans/Burger-Logger-App",
+            "deploy": true,
+            "deployLink": "https://cryptic-savannah-68939.herokuapp.com/",
             "id": 2 
         },
         { 
-            "title": "Web dev top tips", 
-            "body": "lorem ipsum...", 
-            "author": "mario", 
-            "deploy": true, 
+            "title": "Workout Tracker",
+            "body": "The Workout Tracker allows the user to log workouts and view a summary of workouts on a dashboard.",
+            "author": "Adrian Evans", 
+            "image": "public/images/WorkoutTracker.png", 
+            "gitHub": "https://github.com/AdrianMEvans/WorkoutTracker",
+            "deploy": true,
+            "deployLink": "https://fathomless-lake-21087.herokuapp.com/",
             "id": 3 
+        },
+        { 
+            "title": "WeatherCheck",
+            "body": "This is a basic weather search application that allows the user search current and 5 day forecasted weather for a specified location.", 
+            "author": "Adrian Evans", 
+            "image": "public/images/WeatherChecker.png", 
+            "gitHub": "https://github.com/AdrianMEvans/WeatherCheck",
+            "deploy": true,
+            "deployLink": "https://adrianmevans.github.io/WeatherCheck/",
+            "id": 4 
+        },
+        { 
+            "title": "Potter || Lotter - API Project", 
+            "body": "Potter or LOTR (pronounced /'lɒtər/) is a quiz based on the series Lord of the Rings (LOTR) and Harry Potter (Potter).", 
+            "author": "Adrian Evans, Marco Jansen, Nadia Flam, Abbie Barker", 
+            "image": "public/images/POTR_v_LOTR.png", 
+            "gitHub": "https://github.com/AdrianMEvans/LOTR-or-Potter-Quiz",
+            "deploy": true,
+            "deployLink": "https://marcojansen-gmx.github.io/LOTR-or-Potter-Quiz/",
+            "id": 5 
+        },
+        { 
+            "title": "Password Factory", 
+            "body": "The Password Factory is a webpage that is designed to generate a password based on user specified criteria.", 
+            "author": "Adrian Evans", 
+            "image": "public/images/PasswordFactory.png", 
+            "gitHub": "https://github.com/AdrianMEvans/Password-Generator",
+            "deploy": true,
+            "deployLink": "https://adrianmevans.github.io/Password-Generator/",
+            "id": 6 
         }
     ]
 }

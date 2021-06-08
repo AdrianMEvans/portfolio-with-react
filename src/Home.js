@@ -10,7 +10,7 @@ const Home = () => {
       { error && <div>{ error }</div> }      
       { isLoading && <div>Loading...</div> }
       {portfolios && <PortfolioList portfolios={portfolios} title="All Portfolios" />}
-      {portfolios && <PortfolioList portfolios={portfolios.filter((portfolio) => portfolio.deploy === true)} title="Deployed Portfolios" />}
+      {portfolios && <PortfolioList portfolios={portfolios.filter((portfolio) => portfolio.deploy === false)} title="Deployed Portfolios" />}
     </div>
   );
 }
