@@ -9,6 +9,7 @@ const PortfolioList = ({ portfolios, title }) => {
         <div className="portfolio-preview" key={portfolio.id} >
           <Link to={`/portfolio/${portfolio.id}`}>
             <h2>{portfolio.title}</h2>
+            <h4>{portfolio.body}</h4>
             <p>Developed by {portfolio.author}</p>
           </Link>
         </div>

@@ -47,3 +47,13 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.portfolio-preview p {
+  font-size: 12px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.portfolio-preview a {
+  text-decoration: none;
+}
