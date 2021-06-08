@@ -1,29 +1,41 @@
+import { NavLink } from 'react-router-dom'
+
+
 const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Adrian Evans Profile</h1>
       <div className="links">
-        <a href="/portfolio"
-        //         style={{ 
-        //   color: 'white', 
-        //   backgroundColor: '#f1356d',
-        //   borderRadius: '8px' 
-        // }}
-        >Portfolio</a>
-        <a href="/contact"
-        //         style={{ 
-        //   color: 'white', 
-        //   backgroundColor: '#f1356d',
-        //   borderRadius: '8px' 
-        // }}
-        >Contact</a>
-        <a href="/"
-          style={{
-            color: 'white',
-            backgroundColor: '#f1356d',
-            borderRadius: '8px'
+        <NavLink
+          to="/portfolio"
+          activeClassName="selected"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#f1356d"
           }}
-        >Home</a>
+        >
+          Portfolio
+          </NavLink>
+        <NavLink 
+        to="/contact"
+        activeClassName="selected"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#f1356d"
+          }}
+        >
+          Contact
+          </NavLink>
+        <NavLink 
+        exact to="/"
+        activeClassName="selected"
+          activeStyle={{
+            fontWeight: "bold",
+            color: "#f1356d"
+          }}
+        >
+          Home
+          </NavLink>
       </div>
     </nav>
   );
