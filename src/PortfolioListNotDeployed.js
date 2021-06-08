@@ -6,7 +6,7 @@ const PortfolioList = ({ portfolios, title}) => {
         {portfolios.map(portfolio => (
           <div className="portfolio-preview" key={portfolio.id} >
             <h2>{ portfolio.title }</h2>
-            <p>Written by { portfolio.author }</p>
+            <p>Developed by { portfolio.author }</p>
           </div>
         ))}
       </div>
