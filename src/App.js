@@ -3,6 +3,7 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PortfolioDetail from './PortfolioDetail';
 
 function App() {
   return (
@@ -14,8 +15,11 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/portfolio">
+            <Route exact path="/portfolio">
               <Portfolio />
+            </Route>
+            <Route exact path="/portfolio/:id">
+              <PortfolioDetail />
             </Route>
           </Switch>
         </div>

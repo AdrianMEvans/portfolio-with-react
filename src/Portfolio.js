@@ -10,7 +10,7 @@ const Portfolio = () => {
     <div className="home">
       { error && <div>{ error }</div> }      
       { isLoading && <div>Loading...</div> }
-      {portfolios && <PortfolioListNotDeployed portfolios={portfolios.filter((portfolio) => portfolio.deploy === true)} title="Deployed Projects" />}
+      {portfolios && <PortfolioListDeployed portfolios={portfolios.filter((portfolio) => portfolio.deploy === true)} title="Deployed Projects" />}
       {portfolios && <PortfolioListNotDeployed portfolios={portfolios.filter((portfolio) => portfolio.deploy === false)} title="Other Projects" />}
     </div>
   );
