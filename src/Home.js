@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "./PortfolioList";
+import PortfolioListDeployed from "./PortfolioListDeployed";
+import PortfolioListNotDeployed from "./PortfolioListNotDeployed";
+
 import useFetch from "./useFetch";
 
 const Home = () => {
@@ -9,8 +11,8 @@ const Home = () => {
     <div className="home">
       { error && <div>{ error }</div> }      
       { isLoading && <div>Loading...</div> }
-      {portfolios && <PortfolioList portfolios={portfolios} title="All Portfolios" />}
-      {portfolios && <PortfolioList portfolios={portfolios.filter((portfolio) => portfolio.deploy === false)} title="Deployed Portfolios" />}
+      {portfolios && <PortfolioListDeployed portfolios={portfolios} title="All Portfolios" />}
+      {portfolios && <PortfolioListNotDeployed portfolios={portfolios.filter((portfolio) => portfolio.deploy === false)} title="Deployed Portfolios" />}
     </div>
   );
 }
