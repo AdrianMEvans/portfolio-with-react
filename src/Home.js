@@ -7,7 +7,7 @@ const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/portfolioss')
+    fetch('http://localhost:8000/portfolios')
       .then(res => {
         if(!res.ok) {
           throw Error('Could not fetch the requested data');
