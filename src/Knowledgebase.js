@@ -32,6 +32,7 @@ export default function ControlledAccordions() {
   return (
     <div className={classes.root}>
         <h2>Knowledgebase</h2>
+        <br />
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

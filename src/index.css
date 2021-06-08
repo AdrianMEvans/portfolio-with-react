@@ -74,3 +74,9 @@
 .portfolio-preview a {
   text-decoration: none;
 }
+
+.portfolio-home h4 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}

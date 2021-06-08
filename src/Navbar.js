@@ -17,7 +17,7 @@ const Navbar = () => {
           Portfolio
           </NavLink>
         <NavLink 
-        to="/contact"
+        exact to="/contact"
         activeClassName="selected"
           activeStyle={{
             fontWeight: "bold",
@@ -29,6 +29,10 @@ const Navbar = () => {
           <NavLink 
         exact to="/knowledgebase"
         activeClassName="selected"
+        activeStyle={{
+          fontWeight: "bold",
+          color: "#f1356d"
+        }}
         >
           Knowledgebase
           </NavLink>

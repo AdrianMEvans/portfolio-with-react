@@ -1,12 +1,12 @@
 const Home = () => {
 
   return ( 
-    <div className="portfolio">
+    <div className="portfolio-home">
         <h2>Home Page</h2>
         <br />
         <h4>Where am I from?</h4>
         <p>
-        I grew up in Pretoria, South Africa. After studing Bcom(Law) at the University of Pretoria I moved to Johannesburg before moving to the Western Cape, South Coast. In Dec 2017 I relocated to Australia and have been a Perth local since.
+        I grew up in Pretoria, South Africa. After studing Bcom(Law) at the University of Pretoria I moved to Johannesburg before moving to the South Coast of the Western Cape. In Dec 2017 I relocated to Australia and have been a Perth local since.
         </p>
         <br />
         <h4>Things I like To Focus On</h4>
