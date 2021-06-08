@@ -6,8 +6,7 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 import '@fontsource/roboto';
-import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { orange, green, teal, amber, pink, purple } from '@material-ui/core/colors';
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -59,7 +58,7 @@ const PortfolioDetail = () => {
                   Project Repo
         </Button>
                 <Button
-                  startIcon={<HttpIcon style={{ color: green }} />}
+                  startIcon={<HttpIcon />}
                   href={portfolios.deployLink}
                   style={{
                     fontSize: 10
