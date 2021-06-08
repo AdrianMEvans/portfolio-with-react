@@ -20,11 +20,13 @@ function createData(name, detail) {
 
 const rows = [
   createData('Address', "6 Serena Way, Iluka, WA 6028, Australia"),
-  createData('E-mail', <a href="mailto:adrian@polywhiz.com" textDecoration="none">adrian@polywhiz.com</a>),
-  createData('Website', <a textDecoration="none" href="http://www.thefullstackers.com" target="_blank" rel="noreferrer">www.thefullstackers.com</a>),
-  createData('Mobile', <a class="white-text" href="tel:+61424064104">0424 064 104</a>),
-  createData('GitHub Profile', <a class="white-text" href="https://github.com/AdrianMEvans" target="blank">github.com/AdrianMEvans</a>),
-  createData('LinkedIn', <a class="white-text" href="https://www.linkedin.com/company/71619875/admin/" target="blank">LinkedIn - The FullStackers</a>),
+  createData('E-mail', <a href="mailto:adrian@polywhiz.com">adrian@polywhiz.com</a>),
+  createData('Website', <a href="http://www.thefullstackers.com" target="_blank" rel="noreferrer">www.thefullstackers.com</a>),
+  createData('Mobile', <a href="tel:+61424064104">0424 064 104</a>),
+  createData('GitHub Profile', <a href="https://github.com/AdrianMEvans" target="blank">github.com/AdrianMEvans</a>),
+  createData('LinkedIn', <a href="https://www.linkedin.com/company/71619875/admin/" target="blank">LinkedIn - The FullStackers</a>),
+  createData('Resume', <a href="https://adrianmevans.github.io/AdrianEvans-Portfolio-May-2021/assets/files/Adrian_Evans_CV.pdf" target="blank">Download CV here</a>),
+
 ];
 
 export default function BasicTable() {
@@ -32,11 +34,14 @@ export default function BasicTable() {
 
   return (
     <TableContainer component={Paper}>
+      <div>
+        <h2>Contact Details</h2>
+      </div>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Contact</TableCell>
-            <TableCell align="left">Detail</TableCell>
+            <TableCell></TableCell>
+            <TableCell align="left"></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

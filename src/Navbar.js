@@ -26,6 +26,12 @@ const Navbar = () => {
         >
           Contact
           </NavLink>
+          <NavLink 
+        exact to="/knowledgebase"
+        activeClassName="selected"
+        >
+          Knowledgebase
+          </NavLink>
         <NavLink 
         exact to="/"
         activeClassName="selected"

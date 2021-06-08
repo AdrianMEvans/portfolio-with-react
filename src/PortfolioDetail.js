@@ -55,7 +55,6 @@ const PortfolioDetail = () => {
                             style={{
                                 fontSize: 10
                             }}
-                            target="_blank"
                             variant="outlined"
                             color="secondary">
                             Back to List
