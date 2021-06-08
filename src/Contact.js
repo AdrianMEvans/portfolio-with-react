@@ -21,7 +21,7 @@ function createData(name, detail) {
 const rows = [
   createData('Address', "6 Serena Way, Iluka, WA 6028, Australia"),
   createData('E-mail', <a href="mailto:adrian@polywhiz.com" textDecoration="none">adrian@polywhiz.com</a>),
-  createData('Website', <a textDecoration="none" href="http://www.thefullstackers.com" target="_blank">www.thefullstackers.com</a>),
+  createData('Website', <a textDecoration="none" href="http://www.thefullstackers.com" target="_blank" rel="noreferrer">www.thefullstackers.com</a>),
   createData('Mobile', <a class="white-text" href="tel:+61424064104">0424 064 104</a>),
   createData('GitHub Profile', <a class="white-text" href="https://github.com/AdrianMEvans" target="blank">github.com/AdrianMEvans</a>),
   createData('LinkedIn', <a class="white-text" href="https://www.linkedin.com/company/71619875/admin/" target="blank">LinkedIn - The FullStackers</a>),

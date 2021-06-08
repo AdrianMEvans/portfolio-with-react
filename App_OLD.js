@@ -20,7 +20,7 @@ import MenuIcon from '@material-ui/core/Menu';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import { orange, green, teal, amber, pink, purple } from '@material-ui/core/colors';
+// import { orange, green, teal, amber, pink, purple } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
