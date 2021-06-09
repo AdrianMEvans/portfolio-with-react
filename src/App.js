@@ -8,7 +8,6 @@ import Knowledgebase from './Knowledgebase';
 
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PortfolioDetail from './PortfolioDetail';
 
 function App() {
   return (
@@ -28,9 +27,6 @@ function App() {
             </Route>
             <Route exact path="/knowledgebase">
               <Knowledgebase />
-            </Route>
-            <Route exact path="/portfolio/:id">
-              <PortfolioDetail />
             </Route>
           </Switch>
         </div>
