@@ -11,6 +11,14 @@ import POTR_v_LOTR from './images/POTR_v_LOTR.png'
 import WeatherChecker from './images/WeatherChecker.png'
 import WorkoutTracker from './images/WorkoutTracker.png'
 
+import {
+    makeStyles,
+    createMuiTheme,
+    ThemeProvider
+  } from "@material-ui/core/styles";
+import { lightGreen, blue, purple, pink } from "@material-ui/core/colors";
+
+
 
 const Test = () => {
     const portfolios = [
@@ -24,45 +32,45 @@ const Test = () => {
             deployLink: 'https://cryptic-savannah-68939.herokuapp.com/',
             id: 1
         },
-        { 
+        {
             title: 'Workout Tracker',
             body: 'The Workout Tracker allows the user to log workouts and view a summary of workouts on a dashboard.',
-            author: 'Adrian Evans', 
-            image: WorkoutTracker, 
+            author: 'Adrian Evans',
+            image: WorkoutTracker,
             gitHub: 'https://github.com/AdrianMEvans/WorkoutTracker',
             deploy: true,
             deployLink: 'https://fathomless-lake-21087.herokuapp.com/',
-            id: 2 
+            id: 2
         },
-        { 
+        {
             title: 'WeatherCheck',
-            body: 'This is a basic weather search application that allows the user search current and 5 day forecasted weather for a specified location.', 
-            author: 'Adrian Evans', 
-            image: WeatherChecker, 
+            body: 'This is a basic weather search application that allows the user search current and 5 day forecasted weather for a specified location.',
+            author: 'Adrian Evans',
+            image: WeatherChecker,
             gitHub: 'https://github.com/AdrianMEvans/WeatherCheck',
             deploy: true,
             deployLink: 'https://adrianmevans.github.io/WeatherCheck/',
-            id: 3 
+            id: 3
         },
-        { 
-            title: 'Potter || Lotter - API Project', 
-            body: 'Potter or LOTR (pronounced /lɒtər/) is a quiz based on the series Lord of the Rings (LOTR) and Harry Potter (Potter).', 
-            author: 'Adrian Evans, Marco Jansen, Nadia Flam, Abbie Barker', 
-            image: POTR_v_LOTR, 
+        {
+            title: 'Potter || Lotter - API Project',
+            body: 'Potter or LOTR (pronounced /lɒtər/) is a quiz based on the series Lord of the Rings (LOTR) and Harry Potter (Potter).',
+            author: 'Adrian Evans, Marco Jansen, Nadia Flam, Abbie Barker',
+            image: POTR_v_LOTR,
             gitHub: 'https://github.com/AdrianMEvans/LOTR-or-Potter-Quiz',
             deploy: true,
             deployLink: 'https://marcojansen-gmx.github.io/LOTR-or-Potter-Quiz/',
-            id: 4 
+            id: 4
         },
-        { 
-            title: 'Password Factory', 
-            body: 'The Password Factory is a webpage that is designed to generate a password based on user specified criteria.', 
-            author: 'Adrian Evans', 
-            image: PasswordFactory, 
+        {
+            title: 'Password Factory',
+            body: 'The Password Factory is a webpage that is designed to generate a password based on user specified criteria.',
+            author: 'Adrian Evans',
+            image: PasswordFactory,
             gitHub: 'https://github.com/AdrianMEvans/Password-Generator',
             deploy: true,
             deployLink: 'https://adrianmevans.github.io/Password-Generator/',
-            id: 5 
+            id: 5
         },
         {
             title: 'Hookt - Loyalty App',
@@ -74,46 +82,86 @@ const Test = () => {
             id: 6
         }
     ];
+
+
+
     const history = useHistory();
 
     const handleClick = () => {
         history.push('/portfolio');
     }
 
+    const useStyles = makeStyles((theme) => ({
+        margin: {
+          "& > *": {
+            margin: theme.spacing(1)
+          }
+        },
+        spacer: {
+          marginBottom: theme.spacing(10)
+        }
+      }));
+      
+    //   const defaultTheme = createMuiTheme({
+    //     palette: {
+    //       primary: blue,
+    //       secondary: pink
+    //     }
+    //   });
+
+      const customTheme = createMuiTheme({
+        palette: {
+          primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+          },
+          secondary: {
+            light: '#ff7961',
+            main: '#F3B700',
+            dark: '#ba000d',
+            contrastText: '#000',
+          },
+        }
+      });
+      
     return (
         <div className="portfolio-detail">
-        <h1>Portfolio</h1>
+            <h1>Portfolio</h1>
             {portfolios.map((portfolio) => (
                 <article>
-                <h2>{portfolio.title}</h2>
-                <img src={portfolio.image} alt="portfolio item" width="auto" height="150" />
-                <div>{portfolio.body}</div>
-                <h6>Developed by {portfolio.author}</h6>
-                <ButtonGroup variant="outlined">
-                    <Button onClick={handleClick}
-                        startIcon={<GitHubIcon />}
-                        href={portfolio.gitHub}
-                        style={{
-                            fontSize: 10
-                        }}
-                        target="_blank"
-                        variant="contained"
-                        color="secondary">
-                        Project Repo
+                    <h2>{portfolio.title}</h2>
+                    <img src={portfolio.image} alt="portfolio item" width="auto" height="150" />
+                    <div>{portfolio.body}</div>
+                    <h6>Developed by {portfolio.author}</h6>
+                    <ThemeProvider theme={customTheme}>
+                    <ButtonGroup variant="outlined">
+                        <Button onClick={handleClick}
+                            startIcon={<GitHubIcon />}
+                            href={portfolio.gitHub}
+                            style={{
+                                fontSize: 10
+                            }}
+                            target="_blank"
+                            variant="contained"
+                            color="secondary">
+                            Project Repo
                     </Button>
-                    <Button onClick={handleClick}
-                        startIcon={<HttpIcon />}
-                        href={portfolio.deployLink}
-                        style={{
-                            fontSize: 10
-                        }}
-                        target="_blank"
-                        variant="contained"
-                        color="secondary">
-                        Published Project
+                        <Button onClick={handleClick}
+                            startIcon={<HttpIcon />}
+                            href={portfolio.deployLink}
+                            style={{
+                                fontSize: 10
+                            }}
+                            target="_blank"
+                            variant="contained"
+                            color="secondary">
+                            Published Project
                     </Button>
-                </ButtonGroup>
-            </article>
+                    </ButtonGroup>
+                    </ThemeProvider>
+                </article>
             ))}
         </div>
     );
