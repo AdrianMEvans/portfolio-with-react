@@ -1,24 +1,19 @@
-import { useState, Image } from "react";
 import { useHistory } from "react-router-dom";
-
-import useFetch from "./useFetch";
 
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
-import ViewListIcon from '@material-ui/icons/ViewList'; import '@fontsource/roboto';
 import BurgerLogger from './images/BurgerLogger.png'
 import PasswordFactory from './images/PasswordFactory.png'
 import Hookt from './images/Hookt.png'
 import POTR_v_LOTR from './images/POTR_v_LOTR.png'
-import TheKWIZ from './images/TheKWIZ.png'
 import WeatherChecker from './images/WeatherChecker.png'
 import WorkoutTracker from './images/WorkoutTracker.png'
 
 
 const Test = () => {
-    const [portfolios, setPortfolios] = useState([
+    const portfolios = [
         {
             title: 'Burger Logger',
             body: 'Burger Logger allows the user to capture burgers they want to consume and then log consumed burgers.',
@@ -78,7 +73,7 @@ const Test = () => {
             deploy: false,
             id: 6
         }
-    ]);
+    ];
     const history = useHistory();
 
     const handleClick = () => {
@@ -91,7 +86,7 @@ const Test = () => {
             {portfolios.map((portfolio) => (
                 <article>
                 <h2>{portfolio.title}</h2>
-                <img src={portfolio.image} width="auto" height="150" />
+                <img src={portfolio.image} alt="portfolio item" width="auto" height="150" />
                 <div>{portfolio.body}</div>
                 <h6>Developed by {portfolio.author}</h6>
                 <ButtonGroup variant="outlined">
