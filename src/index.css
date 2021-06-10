@@ -60,6 +60,10 @@
   margin-bottom: 20px;
   margin-top: 40px;
 }
+.portfolio-detail h1 {
+  font-size: 26px;
+  color: black;
+}
 .portfolio-detail div {
   margin: 20px 0;
 }
